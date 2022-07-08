@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3b18c;
+  font-family: "Finger Paint", cursive;
+  font-family: "Fraunces", serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: #0026ed;
+  font-family: "Finger Paint";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.boxes {
+  width: 270px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-size: 44px;
+  font-family: "Finger Paint";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+}
+
+/* Box Hovers */
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.x:hover {
+  background: red !important;
+  color: white !important;
+}
+
+.o:hover {
+  background: blue !important;
+  color: white !important;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}
